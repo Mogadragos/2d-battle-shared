@@ -1,3 +1,5 @@
+import { Worker } from "worker_threads";
+
 export interface ServerToClientEvents {
     noArg: () => void;
     basicEmit: (a: number, b: string, c: Buffer) => void;
@@ -15,4 +17,6 @@ export interface ClientToServerEvents {
 
 export interface InterServerEvents {}
 
-export interface SocketData {}
+export interface SocketData {
+    worker?: Worker;
+}
