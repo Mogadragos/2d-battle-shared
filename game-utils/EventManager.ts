@@ -16,10 +16,6 @@ export class EventManager {
                 return Reflect.get(target, prop, receiver);
             },
         });
-
-        this.registerEvent("sceneStart");
-        this.registerEvent("sceneLoaded");
-        this.registerEvent("sceneDestroyed");
     }
 
     registerEvent(eventName: string) {
