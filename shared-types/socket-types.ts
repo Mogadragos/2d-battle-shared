@@ -1,4 +1,5 @@
 import { Worker } from "worker_threads";
+import { GameData } from "./game/GameData";
 
 export interface ServerToClientEvents {
     noArg: () => void;
@@ -6,13 +7,16 @@ export interface ServerToClientEvents {
     withAck: (d: string, callback: (e: number) => void) => void;
 
     // Technical
+    ready: (playerA: boolean) => void;
     close: () => void;
 
     // Game
+    update: (data: GameData) => void;
 }
 
 export interface ClientToServerEvents {
     hello: () => void;
+    spawn: () => void;
 }
 
 export interface InterServerEvents {}
