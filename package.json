@@ -1,5 +1,10 @@
 {
-  "devDependencies": {
-    "@types/node": "^20.5.6"
-  }
+    "scripts": {
+        "update": "npm run update:front && npm run update:back",
+        "update:front": "cd ../front/2d-battle-shared && git pull",
+        "update:back": "cd ../back/2d-battle-shared && git pull"
+    },
+    "devDependencies": {
+        "@types/node": "^20.5.6"
+    }
 }
