@@ -24,9 +24,7 @@ export class EventManager {
     }
 
     dispatchEvent(eventName: string, eventArgs?: any) {
-        console.log("Event :");
-        console.log(eventName);
-        console.log(eventArgs);
+        console.log(`Event : ${eventName}`);
         this.events[eventName]?.callbacks.forEach((callback) => {
             callback(eventArgs);
         });
