@@ -17,6 +17,11 @@ export interface ServerToClientEvents {
 
 export interface ClientToServerEvents {
     hello: () => void;
+
+    // Technical
+    ready: () => void;
+
+    // Game
     spawn: (type: SoldierType) => void;
 }
 
