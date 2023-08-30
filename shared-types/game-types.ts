@@ -1,3 +1,3 @@
-import { SoldierType } from "./game/SoldierType";
+import { TypeEnum } from "./game/TypeEnum";
 
-export { SoldierType };
+export { TypeEnum };

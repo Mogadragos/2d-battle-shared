@@ -1,6 +1,6 @@
 import { Worker } from "worker_threads";
 import { GameData } from "./game/GameData";
-import { SoldierType } from "./game/SoldierType";
+import { TypeEnum } from "./game/TypeEnum";
 
 export interface ServerToClientEvents {
     noArg: () => void;
@@ -22,7 +22,7 @@ export interface ClientToServerEvents {
     ready: () => void;
 
     // Game
-    spawn: (type: SoldierType) => void;
+    spawn: (type: TypeEnum) => void;
 }
 
 export interface InterServerEvents {}
