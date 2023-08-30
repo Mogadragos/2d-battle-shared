@@ -5,3 +5,4 @@ export enum AnimEnum {
 }
 
 // TODO Association anim -> time
+// TODO ATTACK -> hitTime
