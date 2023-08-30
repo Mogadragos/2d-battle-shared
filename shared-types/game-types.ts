@@ -6,4 +6,4 @@ import { GameData } from "./game/GameData";
 
 export { AnimEnum, TypeEnum };
 
-export { EntityData, GameData };
+export type { EntityData, GameData };
