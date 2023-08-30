@@ -1,3 +1,3 @@
-export enum SoldierType {
+export enum TypeEnum {
     SOLDIER = "Soldier",
 }

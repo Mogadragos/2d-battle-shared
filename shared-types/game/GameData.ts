@@ -1,12 +1,16 @@
-import { SoldierType } from "./SoldierType";
+import { AnimEnum } from "./AnimEnum";
+import { TypeEnum } from "./TypeEnum";
 
-export type SoldierData = {
+export type EntityData = {
     id: string;
-    x: number;
-    type: SoldierType;
+    alive: boolean;
+
     playerA: boolean;
+    x: number;
+    type: TypeEnum;
+    anim: AnimEnum;
 };
 
 export type GameData = {
-    soldiers: SoldierData[];
+    entities: EntityData[];
 };
