@@ -8,8 +8,8 @@ export interface ServerToClientEvents {
     withAck: (d: string, callback: (e: number) => void) => void;
 
     // Technical
-    ready: () => void;
-    launch: (playerA: boolean) => void;
+    ready: (playerA: boolean) => void;
+    launch: () => void;
 
     // Game
     update: (data: GameData) => void;
