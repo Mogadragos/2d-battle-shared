@@ -20,5 +20,3 @@ export enum TypeEnum {
     FIVE_TANK,
     FIVE_SPECIAL,
 }
-
-// TODO TypeEnum -> Cost, maxHp, width, speed

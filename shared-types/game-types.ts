@@ -1,9 +1,14 @@
 import { AnimEnum } from "./game/AnimEnum";
 import { TypeEnum } from "./game/TypeEnum";
 
-import { EntityData, AGE_TYPE } from "./game/EntityData";
+import { EntityData } from "./game/EntityData";
+import { EntityConstants } from "./game/EntityConstants";
 import { GameData } from "./game/GameData";
+
+import { AGE_TYPE, TYPE_DATA } from "./game/Data";
 
 export { AnimEnum, TypeEnum };
 
-export type { EntityData, AGE_TYPE, GameData };
+export type { EntityData, EntityConstants, GameData };
+
+export { AGE_TYPE, TYPE_DATA };
