@@ -1,31 +1,7 @@
-import { AgeEnum } from "./AgeEnum";
-import { AnimEnum } from "./AnimEnum";
-import { EntityConstants } from "./EntityConstants";
-import { TypeEnum } from "./TypeEnum";
+import { EntityEnum, EntityConstants } from "../shared-types/game-types";
 
-export const AGE_TYPE: Record<AgeEnum, TypeEnum[]> = {
-    [AgeEnum.ONE]: [TypeEnum.ONE_SHORT, TypeEnum.ONE_LONG, TypeEnum.ONE_TANK],
-    [AgeEnum.TWO]: [TypeEnum.TWO_SHORT, TypeEnum.TWO_LONG, TypeEnum.TWO_TANK],
-    [AgeEnum.THREE]: [
-        TypeEnum.THREE_SHORT,
-        TypeEnum.THREE_LONG,
-        TypeEnum.THREE_TANK,
-    ],
-    [AgeEnum.FOUR]: [
-        TypeEnum.FOUR_SHORT,
-        TypeEnum.FOUR_LONG,
-        TypeEnum.FOUR_TANK,
-    ],
-    [AgeEnum.FIVE]: [
-        TypeEnum.FIVE_SHORT,
-        TypeEnum.FIVE_LONG,
-        TypeEnum.FIVE_TANK,
-        TypeEnum.FIVE_SPECIAL,
-    ],
-};
-
-export const TYPE_DATA: Record<TypeEnum, EntityConstants> = {
-    [TypeEnum.ONE_SHORT]: {
+export const TYPE_DATA: Record<EntityEnum, EntityConstants> = {
+    [EntityEnum.ONE_SHORT]: {
         name: "",
         cost: 15,
         build_time: 1000,
@@ -37,7 +13,7 @@ export const TYPE_DATA: Record<TypeEnum, EntityConstants> = {
         attack_time: 1000,
         speed: 5,
     },
-    [TypeEnum.ONE_LONG]: {
+    [EntityEnum.ONE_LONG]: {
         name: "",
         cost: 0,
         build_time: 0,
@@ -49,7 +25,7 @@ export const TYPE_DATA: Record<TypeEnum, EntityConstants> = {
         attack_time: 0,
         speed: 0,
     },
-    [TypeEnum.ONE_TANK]: {
+    [EntityEnum.ONE_TANK]: {
         name: "",
         cost: 0,
         build_time: 0,
@@ -61,7 +37,7 @@ export const TYPE_DATA: Record<TypeEnum, EntityConstants> = {
         attack_time: 0,
         speed: 0,
     },
-    [TypeEnum.TWO_SHORT]: {
+    [EntityEnum.TWO_SHORT]: {
         name: "",
         cost: 0,
         build_time: 0,
@@ -73,7 +49,7 @@ export const TYPE_DATA: Record<TypeEnum, EntityConstants> = {
         attack_time: 0,
         speed: 0,
     },
-    [TypeEnum.TWO_LONG]: {
+    [EntityEnum.TWO_LONG]: {
         name: "",
         cost: 0,
         build_time: 0,
@@ -85,7 +61,7 @@ export const TYPE_DATA: Record<TypeEnum, EntityConstants> = {
         attack_time: 0,
         speed: 0,
     },
-    [TypeEnum.TWO_TANK]: {
+    [EntityEnum.TWO_TANK]: {
         name: "",
         cost: 0,
         build_time: 0,
@@ -97,7 +73,7 @@ export const TYPE_DATA: Record<TypeEnum, EntityConstants> = {
         attack_time: 0,
         speed: 0,
     },
-    [TypeEnum.THREE_SHORT]: {
+    [EntityEnum.THREE_SHORT]: {
         name: "",
         cost: 0,
         build_time: 0,
@@ -109,7 +85,7 @@ export const TYPE_DATA: Record<TypeEnum, EntityConstants> = {
         attack_time: 0,
         speed: 0,
     },
-    [TypeEnum.THREE_LONG]: {
+    [EntityEnum.THREE_LONG]: {
         name: "",
         cost: 0,
         build_time: 0,
@@ -121,7 +97,7 @@ export const TYPE_DATA: Record<TypeEnum, EntityConstants> = {
         attack_time: 0,
         speed: 0,
     },
-    [TypeEnum.THREE_TANK]: {
+    [EntityEnum.THREE_TANK]: {
         name: "",
         cost: 0,
         build_time: 0,
@@ -133,7 +109,7 @@ export const TYPE_DATA: Record<TypeEnum, EntityConstants> = {
         attack_time: 0,
         speed: 0,
     },
-    [TypeEnum.FOUR_SHORT]: {
+    [EntityEnum.FOUR_SHORT]: {
         name: "",
         cost: 0,
         build_time: 0,
@@ -145,7 +121,7 @@ export const TYPE_DATA: Record<TypeEnum, EntityConstants> = {
         attack_time: 0,
         speed: 0,
     },
-    [TypeEnum.FOUR_LONG]: {
+    [EntityEnum.FOUR_LONG]: {
         name: "",
         cost: 0,
         build_time: 0,
@@ -157,7 +133,7 @@ export const TYPE_DATA: Record<TypeEnum, EntityConstants> = {
         attack_time: 0,
         speed: 0,
     },
-    [TypeEnum.FOUR_TANK]: {
+    [EntityEnum.FOUR_TANK]: {
         name: "",
         cost: 0,
         build_time: 0,
@@ -169,7 +145,7 @@ export const TYPE_DATA: Record<TypeEnum, EntityConstants> = {
         attack_time: 0,
         speed: 0,
     },
-    [TypeEnum.FIVE_SHORT]: {
+    [EntityEnum.FIVE_SHORT]: {
         name: "",
         cost: 0,
         build_time: 0,
@@ -181,7 +157,7 @@ export const TYPE_DATA: Record<TypeEnum, EntityConstants> = {
         attack_time: 0,
         speed: 0,
     },
-    [TypeEnum.FIVE_LONG]: {
+    [EntityEnum.FIVE_LONG]: {
         name: "",
         cost: 0,
         build_time: 0,
@@ -193,7 +169,7 @@ export const TYPE_DATA: Record<TypeEnum, EntityConstants> = {
         attack_time: 0,
         speed: 0,
     },
-    [TypeEnum.FIVE_TANK]: {
+    [EntityEnum.FIVE_TANK]: {
         name: "",
         cost: 0,
         build_time: 0,
@@ -205,7 +181,7 @@ export const TYPE_DATA: Record<TypeEnum, EntityConstants> = {
         attack_time: 0,
         speed: 0,
     },
-    [TypeEnum.FIVE_SPECIAL]: {
+    [EntityEnum.FIVE_SPECIAL]: {
         name: "",
         cost: 0,
         build_time: 0,

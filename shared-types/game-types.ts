@@ -1,14 +1,11 @@
-import { AnimEnum } from "./game/AnimEnum";
-import { TypeEnum } from "./game/TypeEnum";
+import { AgeEnum } from "./game/Age";
+import { AnimEnum } from "./game/Anim";
+import { EntityEnum, EntityConstants, Entity } from "./game/Entity";
+import { Game } from "./game/Game";
+import { PlayerEnum, PlayerConstants, Player } from "./game/Player";
 
-import { EntityData } from "./game/EntityData";
-import { EntityConstants } from "./game/EntityConstants";
-import { GameData } from "./game/GameData";
+export { AgeEnum, AnimEnum, EntityEnum, PlayerEnum };
 
-import { AGE_TYPE, TYPE_DATA } from "./game/Data";
+export type { EntityConstants, PlayerConstants };
 
-export { AnimEnum, TypeEnum };
-
-export type { EntityData, EntityConstants, GameData };
-
-export { AGE_TYPE, TYPE_DATA };
+export type { Entity, Game, Player };
