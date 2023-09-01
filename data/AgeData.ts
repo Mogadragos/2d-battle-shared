@@ -1,6 +1,6 @@
 import { AgeEnum, EntityEnum } from "../shared-types/game-types";
 
-export const AGE_TYPE: Record<AgeEnum, EntityEnum[]> = {
+export const AGE_DATA: Record<AgeEnum, EntityEnum[]> = {
     [AgeEnum.ONE]: [
         EntityEnum.ONE_SHORT,
         EntityEnum.ONE_LONG,
