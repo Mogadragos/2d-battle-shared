@@ -1,6 +1,6 @@
 import { EntityEnum, EntityConstants } from "../shared-types/game-types";
 
-export const TYPE_DATA: Record<EntityEnum, EntityConstants> = {
+export const ENTITY_DATA: Record<EntityEnum, EntityConstants> = {
     [EntityEnum.ONE_SHORT]: {
         name: "",
         cost: 15,
