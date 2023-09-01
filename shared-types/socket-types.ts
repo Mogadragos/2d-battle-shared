@@ -1,5 +1,5 @@
 import { Worker } from "worker_threads";
-import { EntityEnum, Game } from "./game-types";
+import { EntityEnum, Game, PlayerEnum } from "./game-types";
 
 export interface ServerToClientEvents {
     noArg: () => void;
@@ -7,7 +7,7 @@ export interface ServerToClientEvents {
     withAck: (d: string, callback: (e: number) => void) => void;
 
     // Technical
-    ready: (playerA: boolean) => void;
+    ready: (player: PlayerEnum) => void;
     launch: () => void;
 
     // Game
