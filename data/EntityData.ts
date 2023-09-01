@@ -4,14 +4,14 @@ export const ENTITY_DATA: Record<EntityEnum, EntityConstants> = {
     [EntityEnum.ONE_SHORT]: {
         name: "soldier",
         cost: 15,
-        build_time: 1000,
+        build_time: 1,
         gain: 30,
         maxHp: 20,
         width: 5,
         range: 5,
         attack: 5,
         attack_time: 1000,
-        speed: 5,
+        speed: 20,
     },
     [EntityEnum.ONE_LONG]: {
         name: "",

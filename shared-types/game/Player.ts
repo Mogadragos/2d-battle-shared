@@ -1,4 +1,5 @@
 import { AgeEnum } from "./Age";
+import { BuildEnum } from "./Build";
 
 export enum PlayerEnum {
     PLAYER_A = 1,
@@ -17,4 +18,7 @@ export type Player = {
     age: AgeEnum;
     xp: number;
     gold: number;
+
+    buildPercent: number;
+    buildStatus: BuildEnum;
 };
