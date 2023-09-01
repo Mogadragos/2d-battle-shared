@@ -1,5 +1,5 @@
 export enum AnimEnum {
-    WALK,
+    WALK = 1,
     ATTACK,
     DEATH,
 }

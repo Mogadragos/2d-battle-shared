@@ -1,7 +1,7 @@
 import { AnimEnum } from "./Anim";
 
 export enum EntityEnum {
-    ONE_SHORT,
+    ONE_SHORT = 1,
     ONE_LONG,
     ONE_TANK,
 

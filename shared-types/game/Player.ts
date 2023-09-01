@@ -1,7 +1,7 @@
 import { AgeEnum } from "./Age";
 
 export enum PlayerEnum {
-    PLAYER_A,
+    PLAYER_A = 1,
     PLAYER_B,
 }
 

@@ -1,7 +1,7 @@
 import { EntityEnum } from "./Entity";
 
 export enum AgeEnum {
-    ONE,
+    ONE = 1,
     TWO,
     THREE,
     FOUR,
