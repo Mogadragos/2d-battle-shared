@@ -44,6 +44,7 @@ export type Entity = {
 
     playerA: boolean;
     x: number;
+    speed: number;
     type: EntityEnum;
     anim: AnimEnum;
 };
