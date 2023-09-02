@@ -12,8 +12,7 @@ export type PlayerConstants = {
 };
 
 export type Player = {
-    playerA: PlayerEnum;
-    ready: boolean;
+    player: PlayerEnum;
 
     age: AgeEnum;
     xp: number;
