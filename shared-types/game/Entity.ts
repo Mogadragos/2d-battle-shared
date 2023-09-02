@@ -27,14 +27,14 @@ export type EntityConstants = {
     name: string;
 
     cost: number;
-    build_time: number;
+    buildTime: number;
     gain: number;
 
     maxHp: number;
     width: number;
     range: number;
     attack: number;
-    attack_time: number;
+    attackTime: number;
     speed: number;
 };
 
