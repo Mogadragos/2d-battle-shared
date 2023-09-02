@@ -7,10 +7,10 @@ export const ENTITY_DATA: Record<EntityEnum, EntityConstants> = {
         buildTime: 1,
         gain: 30,
         maxHp: 20,
-        width: 5,
+        width: 40,
         range: 5,
         attack: 5,
-        attackTime: 1000,
+        attackTime: 1,
         speed: 20,
     },
     [EntityEnum.ONE_LONG]: {
