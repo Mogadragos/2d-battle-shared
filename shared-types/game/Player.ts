@@ -18,6 +18,6 @@ export type Player = {
     xp: number;
     gold: number;
 
-    buildTimer: number;
+    buildTime: number;
     buildStatus: BuildEnum;
 };
