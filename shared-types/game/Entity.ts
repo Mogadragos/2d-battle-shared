@@ -42,7 +42,6 @@ export type Entity = {
     id: number;
     alive: boolean;
 
-    playerA: boolean;
     x: number;
     speed: number;
     type: EntityEnum;

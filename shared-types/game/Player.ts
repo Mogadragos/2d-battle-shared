@@ -1,5 +1,6 @@
 import { AgeEnum } from "./Age";
 import { BuildEnum } from "./Build";
+import { Entity } from "./Entity";
 
 export enum PlayerEnum {
     PLAYER_A = 1,
@@ -20,4 +21,6 @@ export type Player = {
 
     buildTime: number;
     buildStatus: BuildEnum;
+
+    entities: Entity[];
 };
